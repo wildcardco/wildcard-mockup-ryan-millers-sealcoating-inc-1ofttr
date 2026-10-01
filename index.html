@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Millers Sealcoating Inc | Asphalt Sealcoating &amp; Crack Filling in Lowell, IN</title>
+<meta name="description" content="Millers Sealcoating Inc is a Lowell, Indiana asphalt contractor offering driveway sealing, crack filling, pavement maintenance and commercial lot sealcoating across Lake County. Request a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Big+Shoulders+Stencil+Display:wght@800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#0f1011;
+  --tar:#17181a;
+  --char:#232528;
+  --gravel:#3a3d41;
+  --dust:#9a9d a1;
+  --dust:#a3a6aa;
+  --line:#f2f0ea;
+  --amber:#ffb81c;
+  --amber-deep:#e89a00;
+  --rail:1.5rem;
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--asphalt) var(--grain);
+  color:var(--line);
+  font-family:"Barlow",system-ui,sans-serif;
+  font-size:1.0625rem;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+img{max-width:100%;display:block}
+.disp{font-family:"Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;line-height:.9;letter-spacing:.01em}
+.sten{font-family:"Big Shoulders Stencil Display",Impact,sans-serif;text-transform:uppercase;line-height:.85}
+.skip{position:absolute;left:-999px;top:0;background:var(--amber);color:#000;padding:.6rem 1rem;z-index:99}
+.skip:focus{left:1rem}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* ---------- top bar ---------- */
+.bar{
+  position:absolute;inset:0 0 auto 0;z-index:5;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.1rem var(--rail);
+}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.brand-mark{width:34px;height:34px}
+.brand b{font-family:"Big Shoulders Display";font-weight:900;font-size:1.35rem;letter-spacing:.04em;text-transform:uppercase;line-height:1}
+.brand small{display:block;font-size:.68rem;letter-spacing:.24em;color:var(--dust);text-transform:uppercase}
+.bar-call{
+  font-family:"Big Shoulders Display";font-weight:700;font-size:1.05rem;letter-spacing:.06em;
+  text-decoration:none;border:2px solid var(--line);padding:.35rem .8rem;
+  transition:background .2s,color .2s;
+}
+.bar-call:hover{background:var(--line);color:var(--asphalt)}
+
+/* ---------- hero: fresh-striped lot ---------- */
+.hero{
+  position:relative;min-height:100svh;overflow:hidden;
+  background:
+    radial-gradient(120% 70% at 75% 15%,#26282b 0%,transparent 60%),
+    radial-gradient(80% 60% at 10% 100%,#1b1c1e 0%,transparent 70%),
+    var(--tar);
+  isolation:isolate;
+}
+.hero::before{ /* grain + sheen of warm fresh seal */
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:var(--grain),linear-gradient(115deg,transparent 40%,rgba(255,255,255,.035) 55%,transparent 70%);
+}
+.stalls{
+  position:absolute;z-index:-1;top:-10%;right:-30%;width:120%;height:58%;
+  background:repeating-linear-gradient(90deg,transparent 0 118px,rgba(242,240,234,.16) 118px 124px);
+  transform:skewX(-32deg);
+  -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 100%);
+          mask-image:linear-gradient(180deg,#000 30%,transparent 100%);
+}
+.stall-nums{position:absolute;top:30%;right:4%;display:flex;gap:2.4rem;z-index:-1;opacity:.13}
+.stall-nums span{font-family:"Big Shoulders Stencil Display";font-size:4.5rem;font-weight:900}
+.stripe{
+  position:absolute;left:var(--rail);top:0;width:8px;height:calc(100% - 7.2rem);
+  background:var(--amber);transform-origin:top;
+  animation:paint 1.4s cubic-bezier(.7,0,.2,1) .2s both;
+  box-shadow:0 0 22px rgba(255,184,28,.25);
+}
+.stripe::after{ /* arrow cap into CTA */
+  content:"";position:absolute;left:50%;bottom:-18px;transform:translateX(-50%);
+  border:12px solid transparent;border-top:16px solid var(--amber);border-bottom:0;
+}
+@keyframes paint{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.hero-inner{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:7rem 1.25rem 1.6rem calc(var(--rail) + 1.6rem);
+}
+.eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:1rem}
+.hero h1{font-size:clamp(3.6rem,15vw,11.5rem);font-weight:900;margin-bottom:1.2rem}
+.hero h1 .y{color:var(--amber)}
+.hero h1 .o{-webkit-text-stroke:2px var(--line);color:transparent}
+.hero p.lede{max-width:34ch;color:#d4d4d1;font-size:1.1rem;margin-bottom:2.4rem}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem;margin-left:calc(-1.6rem - 4px)}
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-family:"Big Shoulders Display";font-weight:900;text-transform:uppercase;letter-spacing:.06em;
+  font-size:1.35rem;text-decoration:none;
+  background:var(--amber);color:#111;padding:1rem 1.5rem;
+  clip-path:polygon(0 0,100% 0,100% 70%,92% 100%,0 100%);
+  transition:background .2s,transform .2s;
+}
+.btn:hover{background:var(--line);transform:translateY(-2px)}
+.btn svg{width:22px;height:22px}
+.rating{display:flex;align-items:center;gap:.55rem;font-size:.95rem;color:#d4d4d1}
+.rating .stars{color:var(--amber);letter-spacing:.12em;font-size:1.05rem}
+.rating strong{color:var(--line)}
+
+/* ---------- curb divider ---------- */
+.curb{height:22px;background:repeating-linear-gradient(90deg,var(--amber) 0 60px,#111 60px 120px)}
+
+/* ---------- section scaffolding ---------- */
+section{position:relative}
+.wrap{padding:5.5rem 1.25rem;max-width:1240px;margin:0 auto}
+.kicker{display:flex;align-items:center;gap:.8rem;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);font-weight:600;margin-bottom:1.4rem}
+.kicker::before{content:"";width:38px;height:4px;background:var(--amber)}
+h2{font-size:clamp(2.8rem,9vw,6.4rem);font-weight:900;margin-bottom:1.5rem}
+
+/* ---------- services as painted stalls ---------- */
+.services{background:var(--asphalt)}
+.svc-head p{max-width:46ch;color:var(--dust)}
+.lot{margin-top:3.5rem;border-top:6px solid var(--line);display:grid;grid-template-columns:1fr}
+.stall{
+  position:relative;padding:2rem 0 2.2rem 4.2rem;
+  border-bottom:2px solid rgba(242,240,234,.18);
+  transition:background .3s;
+}
+.stall .n{
+  position:absolute;left:0;top:1.6rem;font-family:"Big Shoulders Stencil Display";font-weight:900;
+  font-size:3rem;line-height:1;color:var(--gravel);transition:color .3s;
+}
+.stall h3{font-family:"Big Shoulders Display";font-weight:900;text-transform:uppercase;font-size:1.9rem;line-height:1;margin-bottom:.6rem;letter-spacing:.02em}
+.stall p{color:var(--dust);max-width:40ch}
+.stall:hover .n{color:var(--amber)}
+.stall::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--amber);transition:width .5s}
+.stall:hover::after{width:100%}
+
+/* ---------- freeze-thaw ---------- */
+.freeze{background:var(--char) var(--grain)}
+.freeze .wrap{display:grid;gap:3rem}
+.freeze p{color:#cfcfcb;max-width:52ch;margin-bottom:1rem}
+.cycle{display:grid;grid-template-columns:1fr;gap:1rem;counter-reset:c}
+.phase{background:var(--tar);border-left:6px solid var(--amber);padding:1.4rem 1.4rem 1.4rem 1.2rem;display:grid;grid-template-columns:96px 1fr;gap:1.2rem;align-items:center}
+.phase svg{width:96px;height:72px}
+.phase h3{font-family:"Big Shoulders Display";font-weight:900;text-transform:uppercase;font-size:1.5rem;line-height:1;margin-bottom:.3rem}
+.phase h3::before{counter-increment:c;content:"0" counter(c) " — ";color:var(--amber)}
+.phase p{margin:0;font-size:.97rem;color:var(--dust)}
+.phase.fix{border-left-color:var(--line);background:#101112}
+
+/* ---------- finish work: giant type band ---------- */
+.finish{background:var(--asphalt);overflow:hidden}
+.finish .wrap{padding-top:6rem;padding-bottom:6rem}
+.big-line{font-size:clamp(4rem,20vw,16rem);font-weight:900;line-height:.82;white-space:nowrap}
+.big-line.out{-webkit-text-stroke:2px var(--gravel);color:transparent}
+.big-line .y{color:var(--amber)}
+.finish-grid{display:grid;gap:2rem;margin-top:3rem}
+.finish-grid div{border-top:2px solid var(--line);padding-top:1rem}
+.finish-grid h3{font-family:"Big Shoulders Display";font-weight:700;text-transform:uppercase;font-size:1.3rem;letter-spacing:.06em;margin-bottom:.4rem}
+.finish-grid p{color:var(--dust);font-size:.98rem}
+
+/* ---------- local / sign ---------- */
+.local{background:var(--tar)}
+.local .wrap{display:grid;gap:3rem;align-items:center}
+.sign{
+  background:var(--amber);color:#111;padding:2rem 1.6rem;
+  border:6px solid #111;outline:3px solid var(--amber);
+  max-width:420px;justify-self:start;transform:rotate(-1.5deg);
+}
+.sign .sten{font-size:clamp(5rem,22vw,9rem);display:block}
+.sign .lbl{font-family:"Big Shoulders Display";font-weight:900;text-transform:uppercase;font-size:1.4rem;letter-spacing:.04em;line-height:1.05}
+.sign .sub{margin-top:.8rem;font-weight:600;font-size:.95rem}
+.local p{color:#cfcfcb;max-width:50ch;margin-bottom:1rem}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem;list-style:none}
+.towns li{border:1px solid var(--gravel);padding:.3rem .75rem;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* ---------- estimate ---------- */
+.estimate{background:var(--asphalt);overflow:hidden}
+.estimate::before{
+  content:"";position:absolute;left:var(--rail);top:0;bottom:0;width:8px;background:var(--amber);opacity:.9;
+}
+.estimate .wrap{padding-left:calc(var(--rail) + 2rem);display:grid;gap:3rem}
+.estimate h2 .y{color:var(--amber)}
+.phone-big{
+  display:inline-block;font-family:"Big Shoulders Display";font-weight:900;
+  font-size:clamp(2.8rem,11vw,6rem);line-height:1;text-decoration:none;color:var(--line);
+  border-bottom:6px solid var(--amber);padding-bottom:.2rem;margin:1rem 0 1.6rem;
+  transition:color .2s;
+}
+.phone-big:hover{color:var(--amber)}
+.checklist{list-style:none;display:grid;gap:.9rem;margin-top:.5rem}
+.checklist li{display:grid;grid-template-columns:28px 1fr;gap:.8rem;color:#cfcfcb}
+.checklist li::before{content:"";width:18px;height:18px;margin-top:.25rem;border:3px solid var(--amber)}
+.card{background:var(--char) var(--grain);padding:2rem 1.6rem;border-top:6px solid var(--line)}
+.card h3{font-family:"Big Shoulders Display";font-weight:900;text-transform:uppercase;font-size:1.7rem;line-height:1;margin-bottom:1.2rem}
+.card dl{display:grid;gap:1.1rem}
+.card dt{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--amber);font-weight:600}
+.card dd{font-size:1.08rem}
+.card dd a{text-decoration:none;border-bottom:1px solid var(--gravel)}
+.card dd a:hover{border-color:var(--amber)}
+.card .btn{margin-top:1.8rem;width:100%;justify-content:center}
+
+/* ---------- footer ---------- */
+footer{background:#0a0a0b;border-top:2px solid var(--char);padding:2.2rem 1.25rem;font-size:.85rem;color:var(--dust)}
+footer .f{max-width:1240px;margin:0 auto;display:flex;flex-wrap:wrap;gap:.8rem 2rem;justify-content:space-between}
+footer .credit{opacity:.6;font-size:.78rem}
+
+/* ---------- scroll reveals (CSS only, progressive) ---------- */
+@supports (animation-timeline:view()){
+  .rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+  @keyframes rise{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:none}}
+  .slide{animation:slide linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+  @keyframes slide{from{transform:translateX(8%)}to{transform:translateX(-22%)}}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+/* ---------- larger screens ---------- */
+@media (min-width:760px){
+  :root{--rail:7vw}
+  .bar{padding:1.4rem var(--rail)}
+  .hero-inner{padding:8rem 6vw 2.4rem calc(var(--rail) + 3rem)}
+  .cta-row{margin-left:calc(-3rem - 4px)}
+  .stripe{height:calc(100% - 8.2rem)}
+  .wrap{padding:7.5rem 6vw}
+  .lot{grid-template-columns:repeat(3,1fr);border-top-width:6px}
+  .stall{padding:2.4rem 2rem 2.6rem 2rem;border-bottom:0;border-right:6px solid var(--line);min-height:300px}
+  .stall:nth-child(3n){border-right:0}
+  .stall:nth-child(-n+3){border-bottom:6px solid var(--line)}
+  .stall .n{position:static;font-size:4.5rem;margin-bottom:1.4rem}
+  .stall::after{bottom:auto;top:0;height:6px}
+  .freeze .wrap{grid-template-columns:1fr 1.15fr;gap:5rem;align-items:start}
+  .finish-grid{grid-template-columns:repeat(3,1fr)}
+  .local .wrap{grid-template-columns:auto 1fr;gap:5rem}
+  .estimate .wrap{grid-template-columns:1.3fr 1fr;padding-left:calc(var(--rail) + 4rem);align-items:start}
+  .sign{padding:2.4rem 2.2rem}
+}
+@media (min-width:1100px){
+  .stall-nums{top:24%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="brand" href="#top" aria-label="Millers Sealcoating Inc, home">
+    <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+      <rect width="34" height="34" fill="#ffb81c"/>
+      <path d="M7 27V7h4l6 9 6-9h4v20h-4V14l-6 8.5L11 14v13z" fill="#111"/>
+    </svg>
+    <span><b>Millers</b><small>Sealcoating Inc</small></span>
+  </a>
+  <a class="bar-call" href="tel:+12195520517">(219) 552-0517</a>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="stalls" aria-hidden="true"></div>
+  <div class="stall-nums" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div>
+  <div class="stripe" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Asphalt contractor · Lowell, Indiana</p>
+    <h1 id="h1" class="disp">Sealed.<br><span class="o">Striped.</span><br><span class="y">Winter&#8209;ready.</span></h1>
+    <p class="lede">Sealcoating, crack filling and pavement maintenance for Lake County driveways and parking lots — done clean, done right, before the freeze sets in.</p>
+    <div class="cta-row">
+      <a class="btn" href="#estimate">Request a free estimate
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><strong>5.0</strong> from 12 Google reviews</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="curb" aria-hidden="true"></div>
+
+<section class="services" aria-labelledby="svc">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <p class="kicker">What we lay down</p>
+      <h2 id="svc" class="disp">Six ways we<br>protect your blacktop</h2>
+      <p>Every job is one stall in the lot — no part of the surface gets skipped, from the first crack to the last edge.</p>
+    </div>
+    <div class="lot">
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">01</span>
+        <h3>Asphalt Sealcoating</h3>
+        <p>A protective coat that shields asphalt from water, UV and road salt, and restores that deep, fresh-black finish.</p>
+      </article>
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">02</span>
+        <h3>Driveway Sealing</h3>
+        <p>Residential driveways sealed edge to edge so your home's first impression looks sharp and holds up through winter.</p>
+      </article>
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">03</span>
+        <h3>Crack Filling &amp; Repair</h3>
+        <p>We fill cracks before water gets in and freezes — the small fix that prevents the big, expensive one.</p>
+      </article>
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">04</span>
+        <h3>Pavement Maintenance</h3>
+        <p>Ongoing care that stretches the life of your asphalt instead of waiting for it to fail.</p>
+      </article>
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">05</span>
+        <h3>Commercial Lots</h3>
+        <p>Parking lot sealcoating for small businesses and property owners who need a clean, professional lot customers trust.</p>
+      </article>
+      <article class="stall rv">
+        <span class="n" aria-hidden="true">06</span>
+        <h3>Residential Services</h3>
+        <p>Straightforward driveway work for homeowners across Lowell and surrounding Lake County communities.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="freeze" aria-labelledby="fz">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Why it matters here</p>
+      <h2 id="fz" class="disp">Indiana winters<br>don't negotiate.</h2>
+      <p>Northwest Indiana pavement freezes and thaws over and over each season. Every cycle, water that's slipped into an open crack turns to ice, expands, and pries the asphalt apart from the inside.</p>
+      <p>Sealcoating and crack filling stop that cycle where it starts. It's the difference between a driveway that lasts and one that crumbles by spring.</p>
+    </div>
+    <div class="cycle" role="list">
+      <div class="phase rv" role="listitem">
+        <svg viewBox="0 0 96 72" aria-hidden="true"><rect x="0" y="30" width="96" height="42" fill="#2b2d30"/><path d="M44 30l4 20 4-20" fill="#0f1011"/><path d="M48 4c-6 9-8 13-8 17a8 8 0 0016 0c0-4-2-8-8-17z" fill="#7fb2d9"/></svg>
+        <div><h3>Water gets in</h3><p>Rain and snowmelt seep into hairline cracks.</p></div>
+      </div>
+      <div class="phase rv" role="listitem">
+        <svg viewBox="0 0 96 72" aria-hidden="true"><rect x="0" y="30" width="96" height="42" fill="#2b2d30"/><path d="M38 30l10 32 10-32" fill="#cfe6f5"/><g stroke="#cfe6f5" stroke-width="3" stroke-linecap="round"><path d="M48 4v20M39 9l18 10M57 9L39 19"/></g></svg>
+        <div><h3>It freezes</h3><p>Ice expands roughly 9% and forces the crack wider.</p></div>
+      </div>
+      <div class="phase rv" role="listitem">
+        <svg viewBox="0 0 96 72" aria-hidden="true"><path d="M0 30h30l6 10 8-6 10 12 8-8 6 6h28v28H0z" fill="#2b2d30"/><path d="M30 30l6 10 8-6 10 12 8-8 6 6" fill="none" stroke="#ffb81c" stroke-width="2"/></svg>
+        <div><h3>It breaks down</h3><p>Thaw, refreeze, repeat — cracks become potholes.</p></div>
+      </div>
+      <div class="phase fix rv" role="listitem">
+        <svg viewBox="0 0 96 72" aria-hidden="true"><rect x="0" y="30" width="96" height="42" fill="#17181a"/><rect x="0" y="26" width="96" height="6" fill="#ffb81c"/><path d="M38 14l8 8 14-16" fill="none" stroke="#f2f0ea" stroke-width="4"/></svg>
+        <div><h3>We seal it off</h3><p>Filled cracks and a fresh seal keep water out all winter.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finish" aria-labelledby="fin">
+  <div class="wrap">
+    <p class="kicker rv">The finish work</p>
+    <h2 id="fin" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Clean edges, crisp lines</h2>
+    <div class="big-line disp slide" aria-hidden="true">Clean <span class="y">edges.</span></div>
+    <div class="big-line out disp slide" aria-hidden="true">Crisp lines. Crisp lines.</div>
+    <div class="finish-grid">
+      <div class="rv"><h3>Edges that stay put</h3><p>No sealer on your lawn, curbs or garage floor. The line between blacktop and everything else stays sharp.</p></div>
+      <div class="rv"><h3>Even, consistent coat</h3><p>A uniform finish across the whole surface — no streaks, no missed patches, no shortcuts.</p></div>
+      <div class="rv"><h3>Ready for the season</h3><p>Work scheduled so your driveway or lot is protected before cold weather arrives.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="local" aria-labelledby="loc">
+  <div class="wrap">
+    <div class="sign rv" aria-label="Rated 5.0 stars from 12 Google reviews">
+      <span class="sten" aria-hidden="true">5.0</span>
+      <span class="lbl">Star rating<br>from local customers</span>
+      <p class="sub">12 Google reviews · every one 5 stars</p>
+    </div>
+    <div class="rv">
+      <p class="kicker">Rooted in Lowell</p>
+      <h2 id="loc" class="disp">Neighbors,<br>not a franchise.</h2>
+      <p>Millers Sealcoating works out of West 231st Avenue in Lowell. The driveways we seal belong to people we run into at the hardware store — so the job gets done the way we'd want it done on our own.</p>
+      <p>Straight answers, honest pricing, and work that holds up. That's how a small-town contractor earns a perfect rating.</p>
+      <ul class="towns" aria-label="Service area">
+        <li>Lowell</li><li>Cedar Lake</li><li>Crown Point</li><li>Schneider</li><li>Lake County, IN</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="estimate" id="estimate" aria-labelledby="est">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Free estimate</p>
+      <h2 id="est" class="disp">Get on the<br><span class="y">schedule.</span></h2>
+      <p style="color:#cfcfcb;max-width:46ch">Call for a free sealcoating estimate. Fall fills up fast before the first freeze — the sooner you call, the sooner your asphalt is protected.</p>
+      <a class="phone-big" href="tel:+12195520517">(219) 552-0517</a>
+      <p style="color:var(--dust);font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.6rem">Have this handy when you call</p>
+      <ul class="checklist">
+        <li>Your address — residential driveway or commercial lot</li>
+        <li>Roughly how big the surface is</li>
+        <li>Any cracks, low spots or damage you've noticed</li>
+        <li>When it was last sealed, if you know</li>
+      </ul>
+    </div>
+    <aside class="card rv" aria-label="Contact details">
+      <h3>Millers Sealcoating Inc</h3>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+12195520517">(219) 552-0517</a></dd></div>
+        <div><dt>Address</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=2130+W+231st+Ave+Lowell+IN+46356" target="_blank" rel="noopener">2130 W 231st Ave<br>Lowell, IN 46356</a></dd></div>
+        <div><dt>Serving</dt><dd>Lowell &amp; Lake County, Northwest Indiana</dd></div>
+        <div><dt>Rating</dt><dd>5.0 ★ · 12 Google reviews</dd></div>
+      </dl>
+      <a class="btn" href="tel:+12195520517">Call for a free quote</a>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="f">
+    <span>© 2026 Millers Sealcoating Inc · 2130 W 231st Ave, Lowell, IN 46356 · <a href="tel:+12195520517">(219) 552-0517</a></span>
+    <span class="credit">Website sample by Wild Card Creative Co</span>
+  </div>
+</footer>
+</body>
+</html>
